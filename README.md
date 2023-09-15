@@ -2,4 +2,18 @@
 
 Simple configuration files 
 
-<img src="example.png">
+
+
+|Distro|[Arch](https://archlinux.org/)|
+|:---:|:---:|
+|WM|[BSPWM](https://github.com/baskerville/bspwm)|
+|Bar|[Polybar](https://github.com/polybar/polybar)|
+|Menu|[Rofi](https://github.com/davatorium/rofi)|
+|Editor|[Neovim](https://neovim.io/)|
+|Compositor|[Picom](https://archlinux.org/packages/community/x86_64/picom/)|
+|Terminal|[xfce4-terminal](https://github.com/alacritty/alacritty)|
+|File Manager|[Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)|
+
+<img src=".github/screenshots/wallwapper.png">
+<img src=".github/screenshots/example.png">
+<img src=".github/screenshots/terminals.png">
