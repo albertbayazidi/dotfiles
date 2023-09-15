@@ -2,8 +2,6 @@
 
 Simple configuration files 
 
-
-
 |Distro|[Arch](https://archlinux.org/)|
 |:---:|:---:|
 |WM|[BSPWM](https://github.com/baskerville/bspwm)|
