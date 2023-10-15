@@ -12,6 +12,6 @@ Simple configuration files
 |Terminal|[xfce4-terminal](https://github.com/alacritty/alacritty)|
 |File Manager|[Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)|
 
-<img src=".github/screenshots/wallwapper.png">
+<img src=".github/screenshots/wallpaper.png">
 <img src=".github/screenshots/example.png">
 <img src=".github/screenshots/terminals.png">
