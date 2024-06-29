@@ -1,4 +1,3 @@
-require("config.lazy")
 require("albert")
-
+require("config.lazy")
 
