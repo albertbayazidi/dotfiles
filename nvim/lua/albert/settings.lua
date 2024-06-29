@@ -14,6 +14,7 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 
+
 vim.api.nvim_create_autocmd('TextYankPost',
     {
   desc = 'Highlight when yanking (copying) text',

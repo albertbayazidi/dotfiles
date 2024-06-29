@@ -2,7 +2,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex)
 
-
 -- complex keymaps
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
