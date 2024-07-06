@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
     {desc = "Open file explorer"})
 
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>',
+    {desc = "Remove search highlight on ecp"})
+
 -- complex keymaps
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>',
     { desc = 'Exit terminal mode' })
