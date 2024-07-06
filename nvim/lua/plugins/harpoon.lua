@@ -18,16 +18,6 @@ return {
                 harpoon.ui:toggle_quick_menu(harpoon:list()) end,
             { desc = "Open quick menu" })
 
-        vim.keymap.set("n",
-            "<C-h>", function()
-                harpoon:list():select(1) end,
-            { desc = "Open first file in menu" })
-
-        vim.keymap.set("n",
-            "<C-t>", function()
-                harpoon:list():select(2) end,
-            { desc = "Open second file in menu" })
-
 -- Toggle previous & next buffers stored within Harpoon list
         vim.keymap.set("n",
              "<C-p>", function()

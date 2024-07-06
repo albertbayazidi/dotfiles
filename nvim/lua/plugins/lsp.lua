@@ -1,14 +1,3 @@
-local function read_json_file(filepath)
-    local file = io.open(filepath, "r")
-    if not file then return nil end
-    local content = file:read("*a")
-    file:close()
-    return vim.fn.json_decode(content)
-end
-
-local custom_words = read_json_file(
-    vim.fn.stdpath("config") .. "lua/albert/customWords.json")
-
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -78,12 +67,14 @@ return {
             sources = cmp.config.sources({
                 { name = "nvim_lsp"},
                 { name = "luasnip"},
+                { name = "path"},
             },
                 {{name = "buffer"},})
         })
         local lspconfig = require("lspconfig")
         lspconfig.lua_ls.setup({
-            settings = {Lua = {diagnostics = {globals = { "vim" }}}}
+            settings = {Lua = {diagnostics =
+                {globals = { "vim","none" }}}}
         })
     end
 }
