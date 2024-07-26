@@ -3,6 +3,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
     {desc = "Open file explorer"})
 
+vim.keymap.set("n", "cd",":cd %",
+    {desc = "Change the current directory"})
+
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>',
     {desc = "Remove search highlight on ecp"})
 
