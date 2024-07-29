@@ -43,7 +43,8 @@ vim.api.nvim_create_autocmd('LspAttach',{
     group = vim.api.nvim_create_augroup('UserLspConfig',
         { clear = true }),
     callback = function(e)
-    local opts = {buffer = e.buf}
+        local opts = {buffer = e.buf}
+
         vim.keymap.set("n", "gd",
             function() vim.lsp.buf.definition() end, opts,
             {desc = "Go to definition"})
@@ -51,10 +52,6 @@ vim.api.nvim_create_autocmd('LspAttach',{
         vim.keymap.set("n", "H",
             function() vim.lsp.buf.hover() end, opts,
             {desc = "Show hover effect"})
-
-        vim.keymap.set("n", "go",
-            function() vim.lsp.buf.type_definition() end, opts,
-            {desc = "Go to type definition"})
 
         vim.keymap.set("n", "rn",
             function() vim.lsp.buf.rename() end, opts,
