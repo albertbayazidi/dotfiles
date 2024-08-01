@@ -1,13 +1,13 @@
 --basic keymaps
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
-    {desc = "Open file explorer"})
+    { desc = "Open file explorer" })
 
-vim.keymap.set("n", "cd",":cd %",
-    {desc = "Change the current directory"})
+vim.keymap.set("n", "cd", ":cd %",
+    { desc = "Change the current directory" })
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>',
-    {desc = "Remove search highlight on ecp"})
+    { desc = "Remove search highlight on ecp" })
 
 -- complex keymaps
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>',
@@ -26,43 +26,51 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>',
     { desc = 'Move focus to the upper window' })
 
 vim.keymap.set("n", "J", "gj",
-    {desc = "Move down (works with long text)"})
+    { desc = "Move down (works with long text)" })
 
 vim.keymap.set("n", "K", "gk",
-    {desc = "Move up (works with long text)"})
+    { desc = "Move up (works with long text)" })
 
 -- Visual mappings
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv",
-    {desc = "move marked marked text down"})
+    { desc = "move marked marked text down" })
 
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv",
-    {desc = "move marked marked text up"})
+    { desc = "move marked marked text up" })
 
 -- LSP mappings
-vim.api.nvim_create_autocmd('LspAttach',{
+vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig',
         { clear = true }),
     callback = function(e)
-        local opts = {buffer = e.buf}
+        local opts = { buffer = e.buf }
 
         vim.keymap.set("n", "gd",
             function() vim.lsp.buf.definition() end, opts,
-            {desc = "Go to definition"})
+            { desc = "Go to definition" })
 
         vim.keymap.set("n", "H",
             function() vim.lsp.buf.hover() end, opts,
-            {desc = "Show hover effect"})
+            { desc = "Show hover effect" })
 
         vim.keymap.set("n", "rn",
             function() vim.lsp.buf.rename() end, opts,
-            {desc = "Rename variables"})
+            { desc = "Rename variables" })
 
         vim.keymap.set("n", "[d",
             function() vim.diagnostic.goto_prev() end, opts,
-            {desc = "Move to prev error"})
+            { desc = "Move to prev error" })
 
         vim.keymap.set("n", "]d",
             function() vim.diagnostic.goto_next() end, opts,
-            {desc = "Move to next error"})
+            { desc = "Move to next error" })
+
+        vim.api.nvim_create_autocmd("BufWritePre", {
+            group = vim.api.nvim_create_augroup("LspFormatOnSave", { clear = true }),
+            buffer = e.buf,
+            callback = function()
+                vim.lsp.buf.format({ async = false })
+            end
+        })
     end
 })
