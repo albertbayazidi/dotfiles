@@ -64,13 +64,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set("n", "]d",
             function() vim.diagnostic.goto_next() end, opts,
             { desc = "Move to next error" })
-
-        vim.api.nvim_create_autocmd("BufWritePre", {
-            group = vim.api.nvim_create_augroup("LspFormatOnSave", { clear = true }),
-            buffer = e.buf,
-            callback = function()
-                vim.lsp.buf.format({ async = false })
-            end
-        })
     end
 })
