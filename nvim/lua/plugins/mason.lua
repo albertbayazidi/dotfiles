@@ -11,7 +11,6 @@ return {
     require("mason-lspconfig").setup({
         ensure_installed = {
             "gopls",
-            "ltex",
             "lua_ls",
             "astro",
             "html",

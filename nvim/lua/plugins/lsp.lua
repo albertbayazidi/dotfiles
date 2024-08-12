@@ -14,6 +14,7 @@ return {
     },
 
     config = function()
+
         require("mason").setup({
             ui = {
                 icons = {
@@ -26,13 +27,12 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "gopls",
-                "ltex",
                 "lua_ls",
                 "astro",
                 "html",
                 "htmx",
-                "clangd",
-            },
+          },
+
             handlers = {
                 function (server_name)
                     require("lspconfig")[server_name].setup {}
@@ -78,4 +78,3 @@ return {
         })
     end
 }
-
