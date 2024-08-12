@@ -4,7 +4,6 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
         local harpoon = require("harpoon")
-        local ui = require("harpoon.ui")
 
         harpoon.setup()
 
@@ -18,7 +17,7 @@ return {
                 harpoon.ui:toggle_quick_menu(harpoon:list()) end,
             { desc = "Open quick menu" })
 
--- Toggle previous & next buffers stored within Harpoon list
+        -- Toggle previous & next buffers stored within Harpoon list
         vim.keymap.set("n",
              "<C-p>", function()
                 harpoon:list():prev() end,
