@@ -19,28 +19,28 @@ vim.opt.scrolloff = 8
 
 -- Allows for use of ctrl l in netrw
 vim.api.nvim_create_autocmd('FileType', {
-    pattern = 'netrw',
-    callback = function()
-        vim.api.nvim_buf_set_keymap(0, 'n', '<C-l>', '<C-w><C-l>', { noremap = true, silent = true })
-    end,
+  pattern = 'netrw',
+  callback = function()
+    vim.api.nvim_buf_set_keymap(0, 'n', '<C-l>', '<C-w><C-l>', { noremap = true, silent = true })
+  end,
 })
 
 -- makes relativenumber visable
 vim.api.nvim_create_augroup('NetrwGroup', { clear = true })
 vim.api.nvim_create_autocmd('FileType', {
-    group = 'NetrwGroup',
-    pattern = 'netrw',
-    callback = function()
-        vim.opt_local.number = true
-        vim.opt_local.relativenumber = true
-    end
+  group = 'NetrwGroup',
+  pattern = 'netrw',
+  callback = function()
+    vim.opt_local.number = true
+    vim.opt_local.relativenumber = true
+  end
 })
 -- makes highlight effect on yank
-vim.api.nvim_create_autocmd('TextYankPost',{
+vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank',
     { clear = true }),
   callback = function()
-      vim.highlight.on_yank()
+    vim.highlight.on_yank()
   end,
-    })
+})
