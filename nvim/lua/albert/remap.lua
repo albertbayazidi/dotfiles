@@ -1,5 +1,9 @@
 --basic keymaps
 vim.g.mapleader = " "
+
+vim.keyymap.set("n", "p", "P",
+  { desc = "keeps previouse yank when pasting" })
+
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
   { desc = "Open file explorer" })
 
@@ -9,7 +13,8 @@ vim.keymap.set("n", "cd", ":cd %",
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>',
   { desc = "Remove search highlight on ecp" })
 
-vim.keymap.set('n', '<leader>w', ':w<CR>', { silent = true })
+vim.keymap.set('n', '<leader>w', ':w<CR>',
+  { silent = true })
 
 -- complex keymaps
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>',
