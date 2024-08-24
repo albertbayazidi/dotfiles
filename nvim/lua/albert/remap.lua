@@ -1,7 +1,7 @@
 --basic keymaps
 vim.g.mapleader = " "
 
-vim.keyymap.set("n", "p", "P",
+vim.keymap.set("n", "p", "P",
   { desc = "keeps previouse yank when pasting" })
 
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
