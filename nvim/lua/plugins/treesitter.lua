@@ -6,7 +6,7 @@ return { {
 
     configs.setup({
       ensure_installed = {
-        "c", "cmake", "zig", "go",
+        "c", "cmake", "go",
         "bash", "lua", "sql", "python",
         "astro", "typescript", "javascript", "html",
         "typst"
