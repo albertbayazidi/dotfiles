@@ -7,9 +7,10 @@ return { {
     configs.setup({
       ensure_installed = {
         "c", "cmake", "go",
-        "bash", "lua", "sql", "python",
+        "bash", "lua", "sql", "python", "julia",
         "astro", "typescript", "javascript", "html",
-        "typst"
+        "typst",
+        "json"
       },
 
       sync_install = false,
