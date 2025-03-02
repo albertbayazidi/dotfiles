@@ -29,12 +29,10 @@ return {
     })
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "gopls",
         "lua_ls",
         "astro",
         "tinymist",
         "html",
-        "htmx",
         "clangd",
       },
 
