@@ -4,6 +4,8 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "p", "P",
   { desc = "keeps previouse yank when pasting" })
 
+vim.keymap.set("n", "q", "<Nop>", { desc = "Disable 'q' to prevent accidental macro recording" })
+
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
   { desc = "Open file explorer" })
 
@@ -37,6 +39,12 @@ vim.keymap.set("n", "J", "gj",
 
 vim.keymap.set("n", "K", "gk",
   { desc = "Move up (works with long text)" })
+
+vim.keymap.set("n", "<C-u>", "<C-u>zz",
+  { desc = "jump up, and center frame" })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz",
+  { desc = "jump down, and center frame" })
 
 -- Visual mappings
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv",
