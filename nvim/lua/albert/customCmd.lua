@@ -26,3 +26,9 @@ vim.api.nvim_create_user_command("FDF",
     vim.cmd("FlipDateFormat")
   end,
   { desc = "Flips date format of dd.mm.yyyy to yyyy.mm.dd, and vice versa" })
+
+vim.api.nvim_create_user_command("Vg",
+  function()
+    vim.cmd("vertical G")
+  end,
+  { desc = "makes a verical buffer for Git status" })
