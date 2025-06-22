@@ -81,3 +81,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
             { desc = "Move to next error" })
     end
 })
+
+-- Custom telescope func
+vim.keymap.set("n", "<leader>fd", function()
+    local custom_picker = require("albert.dir_picker")
+    custom_picker.find_directory_picker()
+end, { desc = "Telescope folder picker" })
