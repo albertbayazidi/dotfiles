@@ -14,13 +14,12 @@ return {
             },
         })
 
-        -- Helper
+        -- Helper function for keybinding
         local function map(mode, lhs, rhs, opts)
             opts = opts or {}
             vim.keymap.set(mode, lhs, rhs, opts)
         end
 
-        -- Keybindings
         map('n', '<leader>hr', gitsigns.reset_hunk)
         map('n', '<leader>hs', gitsigns.stage_buffer)
         map('v', '<leader>hr', function()
