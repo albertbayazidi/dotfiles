@@ -11,9 +11,6 @@ return {
   require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
-        "astro",
-        "tinymist",
-        "html",
         "clangd",
     },
     handlers = {

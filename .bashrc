@@ -18,7 +18,7 @@ export PYTHONPATH=/opt/petsc/linux-c-opt/lib:${PYTHONPATH}
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias grep='rg --color=auto'
+alias grep='grep --color=auto'
 PS1='[\u \W]λ '
 
 # hjemmelagde alias

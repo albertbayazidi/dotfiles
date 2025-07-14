@@ -1,6 +1,5 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = { 'markview.nvim' },
     branch = 'master',
     build = ":TSUpdate",
     lazy = false,
@@ -10,11 +9,8 @@ return {
 
         configs.setup({
             ensure_installed = {
-                "c", "cmake", "go",
-                "bash", "lua", "sql", "python", "julia",
-                "astro", "typescript", "javascript", "html",
-                "typst", "markdown", "markdown_inline",
-                "json"
+                "c", "cmake",
+                "bash", "lua", "python",
             },
 
             sync_install = false,
