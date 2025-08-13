@@ -12,6 +12,13 @@ return {
                 },
                 ignore_buftypes = { "typst" },
             },
+            markdown = {
+                code_blocks = {
+                    enable = true,
+                    sign = true,
+                    label_direction = "left",
+                },
+            },
         })
     end
 }
