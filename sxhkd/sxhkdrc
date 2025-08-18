@@ -4,15 +4,47 @@
 
 # terminal emulator
 super + Return
-	kitty
+	xfce4-terminal
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show drun
+
+# code launcher
+super + v
+	code
+
+# firefox launcher
+super + n
+	firefox
+
+# Caprine launcher
+super + c
+  caprine
 
 #
 # hotkeys
 #
+
+#FN keys
+XF86MonBrightnessDown
+	light -U 15%
+
+XF86MonBrightnessUp
+	light -A 15%
+
+XF86AudioMute
+	wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle 
+
+XF86AudioRaiseVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
+	
+XF86AudioLowerVolume
+	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
+
+#print screen
+super + Print 
+  flameshot gui
 
 # make sxhkd reload its configuration files:
 super + Escape
