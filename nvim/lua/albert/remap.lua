@@ -1,6 +1,9 @@
 --basic keymaps
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "p", "P",
+    { desc = "keeps previouse yank when pasting" })
+
 vim.keymap.set("n", "q", "<Nop>", { desc = "Disable 'q' to prevent accidental macro recording" })
 
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex,
