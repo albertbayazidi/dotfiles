@@ -7,15 +7,8 @@ return {
     },
     config = function()
         local dap = require("dap")
+        dap.set_log_level("TRACE")
 
-        dap.adapters.codelldb = {
-            type = "server",
-            port = "${port}",
-            executable = {
-                command = "codelldb",
-                args = { "--port", "${port}" },
-            },
-        }
 
         require("plugins.debugger.c_debugger").setup()
 
