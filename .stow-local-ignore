@@ -1,8 +1,0 @@
-\.git
-\.gitignore
-\.gitmodules
-
-^/README.*
-
-scripts
-templates
