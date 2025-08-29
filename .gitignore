@@ -1,1 +1,14 @@
 *.json
+
+
+# below are files from .config that i don't want to to keep track off
+**/Electron/
+**/dconf/
+**/discord/
+**/go/
+**/gtk-3.0/
+**/pulse/
+**/yay/
+**/systemd/
+
+
