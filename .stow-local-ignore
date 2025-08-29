@@ -1,0 +1,10 @@
+.git
+.gitignore
+
+^/README.*
+
+scripts
+templates
+displaysize.sh
+grub_theme
+

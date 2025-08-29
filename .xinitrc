@@ -40,8 +40,6 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
+setxkbmap no &
 exec bspwm
 
-#picom & #--fade-in-step=1 --fade-out-step=1 --fade-delta=0&
-#$HOME/.screenlayout/displaysize.sh
-#nitrogen --restore &
