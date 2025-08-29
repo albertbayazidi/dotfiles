@@ -1,4 +1,3 @@
-
 # Usefull commands
 stow . -t /home/albert
 
@@ -7,6 +6,7 @@ stow . -t /home/albert
 - [ ] Add an alias for rofi ssh, (use currect theme)
 - [ ] Add a secondscreen script that works with school setup 
 - [ ] Add either polybar or eww statusbar
-- [ ]
+- [ ] Add phone emulator without software basic graphics or what ever it is called
 - [ ]
 
+# 
