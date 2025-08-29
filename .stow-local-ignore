@@ -5,6 +5,5 @@
 
 scripts
 templates
-displaysize.sh
 grub_theme
-
+arch_packages
