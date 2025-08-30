@@ -10,7 +10,7 @@ if [[ $my_laptop_external_monitor != *disconnected* ]]; then
 
   else
     xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal
-    bspc monitor eDP-1 -d I II III IV V 
+    bspc monitor eDP-1 -d 1 2 3 4 5
     polybar laptop & disown
 fi
 
