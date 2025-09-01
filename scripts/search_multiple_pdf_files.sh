@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # examples of how to use code
 #./search_pdfs.sh      "*.pdf"    residuals
 #   script name        files     search term

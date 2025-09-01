@@ -43,5 +43,6 @@ fi
 setxkbmap no &
 feh --bg-scale pics/background/berserkdrac.png
 xsetroot -cursor_name left_ptr
+picom &
 exec bspwm
 

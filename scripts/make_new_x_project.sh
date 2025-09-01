@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # examples of how to use code
 # make_new          c_project           new_project 
 # script          project type        new folder name

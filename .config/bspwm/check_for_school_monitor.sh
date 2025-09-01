@@ -20,6 +20,7 @@ if [[ $external_monitor != *disconnected* ]]; then
 
 else
     echo "screen is not connected" 
+    feh --bg-scale pics/background/berserkdrac.png
 
     xrandr --output eDP-1 --primary --mode 1920x1080 
     xrandr --output HDMI-1 --off

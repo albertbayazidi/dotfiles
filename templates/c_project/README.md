@@ -1,3 +1,6 @@
-use bear -- make 
-debug flags -g3 -Wextra 
-make -j4
+
+To make the generate the compilation databse (should be done after make clean)
+intercept-build make -j
+
+To make the project
+make -j
