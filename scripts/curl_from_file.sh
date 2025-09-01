@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # examples of how to use code
 # curl_from_file                1                       urls.txt              the_yards
 #     script              start number          file to downlaod from         file name

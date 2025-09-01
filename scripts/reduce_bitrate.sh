@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # examples of how to use code
 # reduce_bitrate_audio
 #     script         
