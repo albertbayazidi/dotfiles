@@ -1,9 +1,21 @@
 # Usefull commands
+Use the bellow command when setting up a new computer
+
+```bash
 stow . -t /home/albert
+```
 
-since we don't have a nice way to start the dual screen setup use the following command to achieve a dual setup
-
+Since we don't have a nice way to start the dual screen setup use the following command to achieve a dual setup
+```bash
 .config/bspwm/check_for_school_monitor.sh
+```
+
+for testing a polybar run this command 
+```bash
+./.config/polybar/launch.sh
+```
+
+
 
 
 # Task to do
