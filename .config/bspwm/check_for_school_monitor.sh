@@ -11,15 +11,21 @@ external_monitor=$(xrandr --query | grep -w 'HDMI-1')
 if [[ $external_monitor != *disconnected* ]]; then
     echo "screen is connected" 
 
+    killall -q polybar
     xrandr --output eDP-1 --primary --mode 1920x1080 \
            --output HDMI-1 --mode 1920x1080 --left-of eDP-1
 
     bspc monitor HDMI-1 -d I II III 
     bspc monitor eDP-1 -d IV V VI
+
+    . $HOME/.config/polybar/launch_alt.sh
+
     feh --bg-scale pics/background/berserkdrac.png pics/background/arch-nord-dark.png
 
 else
     echo "screen is not connected" 
+
+    killall -q polybar
     feh --bg-scale pics/background/berserkdrac.png
 
     xrandr --output eDP-1 --primary --mode 1920x1080 
@@ -38,5 +44,8 @@ else
     bspc desktop -r I II III
     bspc monitor eDP-1 -d 1 2 3 4 5 
     bspc monitor HDMI-1 -r
+    
+    . $HOME/.config/polybar/launch.sh
+
 
 fi

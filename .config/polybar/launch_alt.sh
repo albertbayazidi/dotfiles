@@ -2,6 +2,8 @@
 
 CONFIG_DIR=$HOME/.config/polybar/config.ini
 
-polybar left -c $CONFIG_DIR &
+polybar external -c $CONFIG_DIR & 
+polybar left-alt -c $CONFIG_DIR &
 polybar right -c $CONFIG_DIR &
+
 
