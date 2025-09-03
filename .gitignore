@@ -2,6 +2,9 @@
 
 
 # below are files from .config that i don't want to to keep track off
+**/GIMP/
+**/QtProject.conf
+**/flameshot/
 **/Ferdium/
 **/Electron/
 **/dconf/
