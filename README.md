@@ -11,6 +11,7 @@ for testing a polybar run this command
 ```
 
 # Task to do
+- [ ] Make a lsp config folder similar to debugg folder
 - [ ] Add an alias for rofi ssh, (use currect theme)
 - [ ] Add rofi menu for choosing how to display second screen. (duplicate or extension of main screen)
 - [ ] Add phone emulator without software based graphics or what ever it is called
