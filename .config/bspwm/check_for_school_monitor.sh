@@ -29,21 +29,19 @@ else
     feh --bg-scale pics/background/berserkdrac.png
 
     xrandr --output eDP-1 --primary --mode 1920x1080 
-    xrandr --output HDMI-1 --off
-    
-    while bspc node @I: --kill; do
-        :
-    done
-    while bspc node @II: --kill; do
-        :
-    done
-    while bspc node @III: --kill; do
-        :
-    done
-    # Remove workspaces
-    bspc desktop -r I II III
     bspc monitor eDP-1 -d 1 2 3 4 5 
+
+    
+    for d in I II III; do
+        for n in $(bspc query -N -d $d); do
+            bspc node $n -d 5
+        done
+    done
+
+    # Remove second screen
+    bspc desktop -r I II III
     bspc monitor HDMI-1 -r
+    xrandr --output HDMI-1 --off
     
     . $HOME/.config/polybar/launch.sh
 
