@@ -5,11 +5,11 @@ local sorters = require "telescope.sorters"
 local conf = require("telescope.config").values
 
 _G.TELESCOPE_IGNORE_DIRS = {
-    ".android/", ".cache/", ".cargo/", ".ccache/", ".cisco/", ".cmake/", ".config/", ".venv",
-    ".cpan/", ".dotnet/", ".fltk/", ".fonts/", ".gnupg/", ".gradle/", ".ipynb_checkpoints/",
+    ".android/", ".cache/", ".cargo/", ".ccache/", ".cisco/", ".cmake/", ".docker", ".venv",
+    ".cpan/", ".dotnet/", ".fltk/", ".fonts/", ".gnupg/", ".gradle/", ".ipynb_checkpoints/", ".screenlayout",
     ".ipython/", ".java/", ".julia/", ".jupyter/", ".local/", ".m2/", ".mozilla/", ".mplayer/",
-    ".npm/", ".parallel/", ".pki/", ".platformio/", ".rest-client/", ".ssh/", ".steam/",
-    ".texlive/", ".var/", ".vpn/", ".vscode/", ".vscode-oss/", ".vysor/", ".wine/", ".yarn/",
+    ".npm/", ".parallel/", ".pki/", ".platformio/", ".rest-client/", ".ssh/", ".steam/", "backups/",
+    ".texlive/", ".var/", ".vpn/", ".vscode/", ".vscode-oss/", ".vysor/", ".wine/", ".yarn/", "software/",
     ".zoom/", ".zotero/", ".git/", ".astro/", ".obsidian/", "go/", "node_modules", "target", "dist", "build",
 }
 
