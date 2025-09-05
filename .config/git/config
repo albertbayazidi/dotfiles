@@ -1,0 +1,9 @@
+[user]
+	email = albert.bayzidi@gmail.com
+	name = albert
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pack]
+    threads = 0
