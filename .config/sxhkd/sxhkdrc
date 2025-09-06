@@ -32,7 +32,7 @@ F2
 	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
 
 F3
-	wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
+	wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 10%+
 
 
 #print screen
