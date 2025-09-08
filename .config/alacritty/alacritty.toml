@@ -1,9 +1,12 @@
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+normal = { family = "Adwaita Mono", style = "Regular" }
+#normal = { family = "Adwaita Mono", style = "Regular" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-size = 12.0
+
+size = 8.0
+# size = 12.0
 
 [keyboard]
 bindings = [
