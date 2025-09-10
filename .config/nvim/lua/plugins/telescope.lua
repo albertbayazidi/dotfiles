@@ -7,7 +7,9 @@ return {
         telescope.setup {
             defaults = {
                 file_ignore_patterns = {
-                    "backups"
+                    "backups",
+                    "personlig",
+                    "software"
                 }
             }
         }
