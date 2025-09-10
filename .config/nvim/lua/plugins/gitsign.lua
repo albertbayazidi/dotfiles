@@ -25,6 +25,8 @@ return {
         map('v', '<leader>hr', function()
             gitsigns.reset_hunk({ vim.fn.line('.'), vim.fn.line('v') })
         end)
+        map('n', ']c', gitsigns.next_hunk)
+        map('n', '[c', gitsigns.prev_hunk)
         map('n', '<leader>hR', gitsigns.reset_buffer)
         map('n', '<leader>hS', gitsigns.stage_buffer)
         map('n', '<leader>hp', gitsigns.preview_hunk)
