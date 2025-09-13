@@ -31,6 +31,7 @@ alias markovssh='ssh -Y albertba@markov.math.ntnu.no'
 alias clusterssh='ssh -J albertba@login.stud.ntnu.no albertba@snotra.idi.ntnu.no'
 alias pvvssh='ssh albertba@login.pvv.org'
 alias pvv2ssh='ssh albertba@login2.pvv.org'
+alias tmux='tmux -f .config/tmux/.tmux.conf'
 
 #hjemmelagde hjelpefunksjoner 
 . ~/git/hobby/dotfiles/scripts/master.sh
