@@ -1,7 +1,0 @@
-pane	koding	0	1	:*	0	arch	:/home/albert/git/prosjekt/perivascular-peristalsis	1	nvim	:nvim
-pane	skriving	0	1	:*	0	arch	:/home/albert/git/prosjekt/rapport	1	nvim	:nvim
-pane	skriving	1	0	:-	0	arch	:/home/albert	1	nvim	:nvim git/prosjekt/notater/
-window	koding	0	:kode	1	:*	c500,189x45,0,0,3	off
-window	skriving	0	:Rapport	1	:*	5e40,93x45,0,0,11	off
-window	skriving	1	:Notater	0	:-	5e41,93x45,0,0,12	off
-state	skriving	
