@@ -6,18 +6,23 @@
 # add some sort of compression afterwards
 # add some simple flag that allows for revocery from this command
 
-locale_backup () {
-    local destination=docs/backups/
+local_backup () {
+    local destination="$HOME/docs/backups/home"
+    local source="$HOME/"
+    local flags="-azPh"
     local excludes=(
-        "docs/backups" # very important to have this
-        "git"
-        ".cache" 
-        ".local"
-        ".mozilla"
-        ".zotero"
-        ".npm"
-        "docs/NTNU/prosjektoppgave_semester/parallelberegninger"
-        "docs/NTNU/prosjektoppgave_semester/prosjekt_oppgave_notater")
+        "docs/backups"
+        "git/*"
+        ".git/*"
+        ".cache/*"
+        ".local/*"
+        ".mozilla/*"
+        ".zotero/*"
+        ".npm/*"
+        ".zoom/*"
+        ".pki/*"
+        ".parallel/*"
+    )
 
-    rsync -azPh --delete "${excludes[@]/#/--exclude=}" $HOME $destination
+    rsync "$flags" --delete "${excludes[@]/#/--exclude=}" "$source" "$destination"
 }
