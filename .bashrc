@@ -1,9 +1,6 @@
 # ~/.bashrc
 
 # paths PLACE IN A DIFFRENT FILE 
-export ANDROID_AVD_HOME="$HOME/.android/avd/"
-export ANDROID_HOME="$HOME/git/software/phone/"
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
 
 export GOPATH="$HOME/.lcocal/go"
 export GOBIN="$HOME/.lcocal/bin"
@@ -16,13 +13,11 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 alias ls='exa'
 alias grep='grep --color=auto'
-PS1='[albert \W]λ '
+PS1='[albert-server \W]λ '
 
 # hjemmelagde alias
 alias la='ls -A'
-alias lock='betterlockscreen -l dim 50'
 alias untar='tar -xvzf' 
-alias phone='./git/software/phone/emulator/emulator -avd google-34 -gpu swiftshader_indirect -writable-system'
 alias clipy='xclip -selection clipboard'
 
 # ssh alias 
@@ -31,13 +26,8 @@ alias markovssh='ssh -Y albertba@markov.math.ntnu.no'
 alias clusterssh='ssh -J albertba@login.stud.ntnu.no albertba@snotra.idi.ntnu.no'
 alias pvvssh='ssh albertba@login.pvv.org'
 alias pvv2ssh='ssh albertba@login2.pvv.org'
-alias serverssh='ssh alb@100.64.0.1'
 
 alias tmux='tmux -f .config/tmux/.tmux.conf'
-
-#hjemmelagde hjelpefunksjoner 
-. ~/git/hobby/dotfiles/scripts/master.sh
-
 
 # history configs
 HISTSIZE=1000

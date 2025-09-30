@@ -1,27 +1,3 @@
 *.json
 
 
-# below are files from .config that i don't want to to keep track off
-**/GIMP/
-**/QtProject.conf
-**/flameshot/
-**/Ferdium/
-**/Electron/
-**/dconf/
-**/discord/
-**/go/
-**/gtk-3.0/
-**/pulse/
-**/yay/
-**/systemd/
-**/chromium/
-**/mimeapps.list
-**/PrusaSlicer/
-**/Slack/
-**/inkscape/
-**/inkstitch/
-**/ksnip/
-**/libreoffice/
-**/tmux/tmux_*
-**/tmux/last
-

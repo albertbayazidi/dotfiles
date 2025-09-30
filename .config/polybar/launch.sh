@@ -1,7 +1,0 @@
-#!/bin/bash
-
-CONFIG_DIR=$HOME/.config/polybar/config.ini
-
-polybar left -c $CONFIG_DIR &
-polybar right -c $CONFIG_DIR &
-
