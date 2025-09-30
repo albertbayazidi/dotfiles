@@ -14,6 +14,7 @@ if [[ $external_monitor != *disconnected* ]]; then
     killall -q polybar
     xrandr --output eDP-1 --primary --mode 1920x1080 \
            --output HDMI-1 --mode 1920x1080 --left-of eDP-1
+    xinput --map-to-output 'Raydium Corporation Raydium Touch System' eDP-1
 
     bspc monitor HDMI-1 -d I II III 
     bspc monitor eDP-1 -d IV V VI
