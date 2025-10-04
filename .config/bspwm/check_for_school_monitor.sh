@@ -21,7 +21,7 @@ if [[ $external_monitor != *disconnected* ]]; then
 
     . $HOME/.config/polybar/launch_alt.sh
 
-    feh --bg-scale pics/background/berserkdrac.png pics/background/arch-nord-dark.png
+    feh --bg-scale pics/background/berserkdrac.png pics/background/arch-nord-dark-red.png
 
 else
     echo "screen is not connected" 
