@@ -33,11 +33,13 @@ alias pvvssh='ssh albertba@login.pvv.org'
 alias pvv2ssh='ssh albertba@login2.pvv.org'
 alias serverssh='ssh alb@100.64.0.1'
 
+# tmux alias
 alias tmux='tmux -f .config/tmux/.tmux.conf'
+alias skriving='tmux a -t skriving'
+alias koding='tmux a -t koding'
 
 #hjemmelagde hjelpefunksjoner 
 . ~/git/hobby/dotfiles/scripts/master.sh
-
 
 # history configs
 HISTSIZE=1000
