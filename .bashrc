@@ -1,5 +1,8 @@
 # ~/.bashrc
 
+# settings
+shopt -s globstar
+
 # paths PLACE IN A DIFFRENT FILE 
 export ANDROID_AVD_HOME="$HOME/.android/avd/"
 export ANDROID_HOME="$HOME/git/software/phone/"
@@ -31,7 +34,7 @@ alias markovssh='ssh -Y albertba@markov.math.ntnu.no'
 alias clusterssh='ssh -J albertba@login.stud.ntnu.no albertba@snotra.idi.ntnu.no'
 alias pvvssh='ssh albertba@login.pvv.org'
 alias pvv2ssh='ssh albertba@login2.pvv.org'
-alias serverssh='ssh alb@100.64.0.1'
+alias serverssh='ssh -Y alb@100.64.0.1'
 
 # tmux alias
 alias tmux='tmux -f .config/tmux/.tmux.conf'
