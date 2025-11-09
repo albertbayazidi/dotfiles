@@ -1,6 +1,8 @@
 vim.lsp.enable({
   "lua_ls",
-  "biome"
+  "biome",
+  "pyright",
+  "clangd"
 })
 
 -- completion

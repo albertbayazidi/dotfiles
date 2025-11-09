@@ -1,4 +1,4 @@
-return {
+vim.lsp.config["biome"] = {
   cmd = { "biome", "lsp-proxy" },
   filetypes = {
     "css",
