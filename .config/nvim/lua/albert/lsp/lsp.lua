@@ -2,7 +2,9 @@ vim.lsp.enable({
   "lua_ls",
   "biome",
   "pyright",
-  "clangd"
+  "clangd",
+  "tailwindcss",
+  "tinymist",
 })
 
 -- completion
