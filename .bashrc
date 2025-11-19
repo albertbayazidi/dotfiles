@@ -26,7 +26,7 @@ alias la='ls -A'
 alias lock='betterlockscreen -l dim 50'
 alias untar='tar -xvzf' 
 alias phone='./git/software/phone/emulator/emulator -avd google-34 -gpu swiftshader_indirect -writable-system'
-alias clipy='xclip -selection clipboard'
+alias yy='xclip -selection clipboard'
 
 # ssh alias 
 alias ntnussh='ssh -Y albertba@login.stud.ntnu.no'

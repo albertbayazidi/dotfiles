@@ -4,11 +4,11 @@ return {
     config = function()
       local notify = require("notify")
       notify.setup({
-        stages = "fade_in_slide_out",  -- Smooth animations
-        timeout = 3000,                -- Notification timeout in ms
+        stages = "fade_in_slide_out", -- Smooth animations
+        timeout = 3000,            -- Notification timeout in ms
         background_colour = "#000000", -- Background color
       })
-      vim.notify = notify              -- Replace default `vim.notify`
+      vim.notify = notify          -- Replace default `vim.notify`
 
       -- Hook LSP messages into nvim-notify
       vim.lsp.handlers["window/showMessage"] = function(_, result, ctx)
