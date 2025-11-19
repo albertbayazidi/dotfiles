@@ -2,7 +2,8 @@
 *.env
 
 # below are files from .config that i don't want to to keep track off
-**/Microsoft/ 
+**/ParaView
+/**/Microsoft/ 
 **/teams/ 
 **/GIMP/
 **/QtProject.conf
