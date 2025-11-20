@@ -4,5 +4,8 @@ vim.lsp.config["tinymist"] = {
     "typst",
   },
   root_markers = {".git"},
+  settings ={
+   formatterMode = "typstyle",
+  }
 }
 
