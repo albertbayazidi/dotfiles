@@ -1,3 +1,13 @@
+vim.g.clipboard = {
+  name = "xclip",
+  copy = {
+    ["+"] = { "xclip", "-selection", "clipboard" },
+  },
+  paste = {
+    ["+"] = { "xclip", "-selection", "clipboard", "-o" },
+  },
+}
+
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 
