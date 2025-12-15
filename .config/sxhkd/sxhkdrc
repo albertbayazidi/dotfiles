@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-    $HOME/.config/rofi/launchers/type-2/launcher.sh ssh
+    $HOME/.config/rofi/scripts/launcher
 
 # firefox launcher
 super + n
@@ -34,6 +34,9 @@ F2
 F3
 	wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 10%+
 
+# monitor mode 
+F7
+    $HOME/.config/rofi/scripts/monitor_mode
 
 #print screen
 super + Print 
