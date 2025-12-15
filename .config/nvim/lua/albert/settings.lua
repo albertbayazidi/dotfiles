@@ -1,6 +1,9 @@
 vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_node_provider = 0
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cmdheight = 0
@@ -43,6 +46,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     group = vim.api.nvim_create_augroup('kickstart-highlight-yank',
         { clear = true }),
     callback = function()
-        vim.highlight.on_yank()
+        vim.hl.on_yank()
     end,
 })

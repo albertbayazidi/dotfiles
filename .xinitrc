@@ -45,6 +45,7 @@ feh --bg-scale pics/background/berserkdrac.png
 xsetroot -cursor_name left_ptr
 picom &
 flameshot &
+dunst &
 
 xmodmap -e "keycode 112 = NoSymbol"
 xmodmap -e "keycode 117 = NoSymbol"

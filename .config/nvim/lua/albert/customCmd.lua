@@ -1,5 +1,10 @@
 vim.api.nvim_create_user_command("CurrentPath", function()
-	local file_path = vim.api.nvim_buf_get_name(0)
+    local file_path
+    if vim.bo.filetype == 'netrw' then
+        file_path = vim.b.netrw_curdir
+    else
+        file_path = vim.api.nvim_buf_get_name(0)
+    end
 	vim.fn.setreg("+", file_path)
 end, { desc = "copy current path to clipboard" })
 
