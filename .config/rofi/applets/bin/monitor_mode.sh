@@ -13,7 +13,7 @@ list_row="1"
 # Options
 option_1="󱎴"
 option_2="󰍺"
-option_3="󱢇"
+option_3="󰌢"
 
 # Rofi CMD
 rofi_cmd() {
@@ -35,6 +35,6 @@ chosen="$(run_rofi)"
 case ${chosen} in
     $option_1) $HOME/.config/bspwm/extend_monitor.sh ;;
     $option_2) $HOME/.config/bspwm/duplicate_monitor.sh ;; 
-    $option_3) notify-send -u critical "Obs!" "New modes under construction" ;; 
+    $option_3) $HOME/.config/bspwm/normal_monitor.sh ;;  
 esac
 

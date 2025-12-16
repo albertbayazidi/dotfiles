@@ -8,13 +8,13 @@
 # We have to make a distinction because we want the else block to not remove nodes on the laptop screen when the script is ran, but we still want it to remove nodes from the desktops associated with the monitor (that was disconnected).
 
 # bspwm will use the extra monitor as an extra screen, if we don't remove it then going to the first desktop with super + 1 will send you to nothingness
+main_screen="eDP-1"
+second_screen=$(xrandr --query | grep -w 'connected' | sed -n '2p' | awk '{print $1}')
 
-external_monitor=$(xrandr --query | grep -w 'HDMI-1')
-
-if [[ $external_monitor != *disconnected* ]]; then
+if [[ -n "$second_screen"  ]]; then
 
     killall -q polybar
-    bspc monitor eDP-1 -d 1 2 3 4 5 
+    bspc monitor $main_screen -d 1 2 3 4 5 
     
     for d in I II III; do
         for n in $(bspc query -N -d $d); do
@@ -24,11 +24,11 @@ if [[ $external_monitor != *disconnected* ]]; then
     
     bspc desktop -r I II III
     
-    xrandr --output eDP-1 --primary --mode 1920x1080 \
-           --output HDMI-1 --mode 1920x1080 --same-as eDP-1
-    xinput --map-to-output 'Raydium Corporation Raydium Touch System' eDP-1
+    xrandr --output $main_screen --primary --mode 1920x1080 \
+           --output $second_screen --mode 1920x1080 --same-as $main_screen
+    xinput --map-to-output 'Raydium Corporation Raydium Touch System' $main_screen
 
-    bspc monitor HDMI-1 -r
+    bspc monitor $second_screen -r
 
     . $HOME/.config/polybar/launch.sh
 
