@@ -16,6 +16,7 @@ if [[ ${#monitors[@]} -gt 0 ]]; then
     
     xrandr --output $main_screen --primary --mode 1920x1080 
     bspc monitor $main_screen -d 1 2 3 4 5 
+    feh --bg-scale pics/background/berserkdrac.png
 
     for d in I II III; do
         for n in $(bspc query -N -d $d); do
@@ -29,10 +30,9 @@ if [[ ${#monitors[@]} -gt 0 ]]; then
         bspc monitor $monit -r
         xrandr --output $monit --off
     done
-    
-    xinput --map-to-output 'Raydium Corporation Raydium Touch System' $main_screen
-
-    . $HOME/.config/bspwm/change_font.sh
-    . $HOME/.config/polybar/launch.sh
 fi
 
+xinput --map-to-output 'Raydium Corporation Raydium Touch System' $main_screen
+
+. $HOME/.config/bspwm/change_font.sh
+. $HOME/.config/polybar/launch.sh
