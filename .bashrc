@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[albert \W]λ '
+PS1='[VPS \W]λ '
 
 # Exports
 . $HOME/.config/bash/exports.sh  
@@ -13,3 +13,4 @@ PS1='[albert \W]λ '
 
 # Alias
 . $HOME/.config/bash/alias.sh
+. "/root/.local/share//cargo/env"
