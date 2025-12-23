@@ -1,3 +1,2 @@
-== test 1 
+== Title
 #include "test.typ"
-

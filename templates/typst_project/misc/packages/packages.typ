@@ -1,2 +1,2 @@
-#import "./theorems.typ": *
-
+#import "./subfigs/subtable.typ": *
+#import "./subfigs/supertable.typ": *
