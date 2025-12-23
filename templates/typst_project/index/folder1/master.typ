@@ -1,3 +1,2 @@
-
-== Model equation
+== Title 
 #include "test.typ"
