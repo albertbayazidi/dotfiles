@@ -22,6 +22,8 @@ vim.opt.scrolloff = 8
 
 vim.opt.splitright = true
 
+vim.env.BASH_ENV = vim.fn.expand("~/.config/nvim/vim_bash.sh")
+
 -- Allows for use of ctrl l in netrw
 vim.api.nvim_create_autocmd('FileType', {
     pattern = 'netrw',

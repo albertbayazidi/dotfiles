@@ -14,6 +14,7 @@ return {
             "pyright",
             "jsonls",
             "astro",
+            "gopls",
             "tinymist",
             "html",
             "clangd",
