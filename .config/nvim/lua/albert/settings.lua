@@ -18,6 +18,7 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
 vim.opt.splitright = true
+vim.opt.updatetime = 100
 
 -- Allows for use of ctrl l in netrw
 vim.api.nvim_create_autocmd("FileType", {
