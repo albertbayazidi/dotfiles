@@ -3,8 +3,8 @@ monitor = 0
 follow = keyboard
 width = 400
 height = (0,200)
-origin = top-center
-offset = (0,20)
+origin = top-right
+offset = (0,45)
 scale = 0
 notification_limit = 5
 

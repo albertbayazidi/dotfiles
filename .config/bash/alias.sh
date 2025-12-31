@@ -15,7 +15,8 @@ alias clusterssh="ssh -J albertba@login.stud.ntnu.no albertba@snotra.idi.ntnu.no
 alias pvvssh="ssh albertba@login.pvv.org"
 alias pvv2ssh="ssh albertba@login2.pvv.org"
 alias serverssh="ssh -Y alb@100.64.0.1"
-alias vps="ssh -Yi ~/.ssh/vps root@37.27.176.162"
+alias serversshlocal="ssh -Y alb@192.168.0.175"
+alias vpsssh="ssh -Yi ~/.ssh/vps root@37.27.176.162"
 
 # tmux alias
 alias tmux="tmux -f .config/tmux/.tmux.conf"
