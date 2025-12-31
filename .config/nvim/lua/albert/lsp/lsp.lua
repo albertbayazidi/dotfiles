@@ -5,6 +5,8 @@ vim.lsp.enable({
   "clangd",
   "tailwindcss",
   "tinymist",
+  "harper"
+
 })
 
 -- completion
@@ -31,4 +33,12 @@ vim.diagnostic.config({
     border = "rounded",
     sorace = true,
   },
+})
+
+-- In settings you can sett how long it takes for the floating diagnostic window to pop opp
+vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+  group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+  callback = function()
+    vim.diagnostic.open_float(nil, { focus = false, border = "rounded" })
+  end,
 })
