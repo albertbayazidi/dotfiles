@@ -7,8 +7,8 @@
     label: none, 
     cap-pos: bottom,      
     sub-cap-pos: bottom,
-    kind: table,          // <--- NEW: Default to table
-    supplement: "Table"   // <--- NEW: Default to "Table"
+    kind: table,          
+    supplement: "Table"  
   ) = {
   
   // 1. Update shared state so children match this type

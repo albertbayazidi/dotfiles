@@ -6,7 +6,6 @@
 = Intro
 #include "index/intro.typ"
 
-#set heading(numbering:"1.")
 
 #lorem(100)
 = Chapter 1<the-first-chapter>
