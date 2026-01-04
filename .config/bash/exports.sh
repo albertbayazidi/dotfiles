@@ -1,7 +1,3 @@
-export ANDROID_AVD_HOME="$HOME/.android/avd/"
-export ANDROID_HOME="$HOME/git/software/phone/"
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share/"
@@ -19,3 +15,9 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+software_dir="$HOME/git/software"
+nvim_bin="$software_dir/nvim/bin"
+
+export PATH=$PATH:"$nvim_bin"
+

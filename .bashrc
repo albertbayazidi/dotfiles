@@ -13,4 +13,5 @@ PS1='[VPS \W]λ '
 
 # Alias
 . $HOME/.config/bash/alias.sh
+
 . "/root/.local/share//cargo/env"
