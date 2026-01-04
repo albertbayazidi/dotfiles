@@ -19,7 +19,7 @@ alias serversshlocal="ssh -Y alb@192.168.0.175"
 alias vpsssh="ssh -Yi ~/.ssh/vps root@37.27.176.162"
 
 # tmux alias
-alias tmux="tmux -f .config/tmux/.tmux.conf"
+alias tmux="tmux -f $HOME/.config/tmux/.tmux.conf"
 alias skriving="tmux a -t skriving"
 alias koding="tmux a -t koding"
 
