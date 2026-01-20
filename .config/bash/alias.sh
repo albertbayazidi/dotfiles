@@ -17,6 +17,7 @@ alias pvv2ssh="ssh albertba@login2.pvv.org"
 alias serverssh="ssh -Y alb@100.64.0.1"
 alias serversshlocal="ssh -Y alb@192.168.0.175"
 alias vpsssh="ssh -Yi ~/.ssh/vps root@37.27.176.162"
+alias sfp_vpsssh="ssh -Yi ~/.ssh/sfp_vps root@37.27.188.216"
 
 # tmux alias
 alias tmux="tmux -f $HOME/.config/tmux/.tmux.conf"
