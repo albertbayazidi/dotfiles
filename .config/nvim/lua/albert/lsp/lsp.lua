@@ -6,7 +6,9 @@ vim.lsp.enable({
   "tailwindcss",
   "tinymist",
   "harper",
-  "typescript"
+  "typescript",
+  "gopls",
+  "bash"
 
 })
 
