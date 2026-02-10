@@ -1,5 +1,5 @@
-vim.lsp.config["ruff"] = {
-  cmd = { "ruff", "format" },
+return {
+  cmd = { "ruff", "server" },
   filetypes = {    "python"  },
   root_markers = { "pyproject.toml" },
 }

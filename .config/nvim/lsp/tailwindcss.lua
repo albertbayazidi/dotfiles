@@ -1,4 +1,4 @@
-vim.lsp.config["tailwindcss"] = {
+return {
   cmd = {"tailwindcss-language-server"},
   filetypes = {
     "javascript",

@@ -1,4 +1,4 @@
-vim.lsp.config["typescript"] = {
+return {
   cmd = { "typescript-language-server", "--stdio" },
   filetypes = {
     "javascript",

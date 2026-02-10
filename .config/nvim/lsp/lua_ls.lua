@@ -1,18 +1,16 @@
-vim.lsp.config["lua_ls"] = {
-	cmd = { "lua-language-server" },
+return {
+    cmd = { "lua-language-server" },
+    filetypes = { "lua" },
+    root_markers = { { '.luarc.json', '.luarc.jsonc' }, ".git" },
 
-	filetypes = { "lua" },
-
-	root_markers = { { '.luarc.json', '.luarc.jsonc' }, ".git" },
-
-	settings = {
-		Lua = {
-			runtime = {
-				version = "LuaJIT",
-			},
-      diagnostics = {
-        globals = {"vim"},
-      }
-		},
-	},
+    settings = {
+        Lua = {
+            runtime = {
+                version = "LuaJIT",
+            },
+            diagnostics = {
+                globals = {"vim"},
+            }
+        },
+    },
 }
