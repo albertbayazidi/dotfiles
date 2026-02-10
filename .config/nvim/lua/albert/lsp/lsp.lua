@@ -7,6 +7,8 @@ vim.lsp.enable({
   "tinymist",
   "harper",
   "typescript",
+  "ruff",
+  "svelte",
   "gopls",
   "bash"
 
@@ -20,7 +22,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     if client:supports_method("textDocument/completion") then
       vim.opt.completeopt = { "menu", "noinsert", "fuzzy", "popup" }
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
-      vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end)
     end
   end,
 })
