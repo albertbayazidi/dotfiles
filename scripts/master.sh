@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_url="/home/albert/git/hobby/dotfiles/scripts"
+base_url="$HOME/git/hobby/dotfiles/scripts"
 
 . $base_url"/make_new_x_project.sh"
 . $base_url"/curl_from_file.sh"
