@@ -18,9 +18,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     if client:supports_method("textDocument/completion") then
-      local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
-      client.server_capabilities.completionProvider.triggerCharacters = chars
-      vim.opt.completeopt = { "menu", "menuone", "noinsert", "fuzzy", "popup" }
+      vim.opt.completeopt = { "menu", "noinsert", "fuzzy", "popup" }
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
       vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end)
     end
@@ -34,13 +32,6 @@ vim.diagnostic.config({
   severity_sort = true,
   float = {
     border = "rounded",
-    sorace = true,
+    source = true,
   },
-})
-
-vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-  group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
-  callback = function()
-    vim.diagnostic.open_float(nil, { focus = false, border = "rounded" })
-  end,
 })
