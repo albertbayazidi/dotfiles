@@ -1,12 +1,26 @@
 return {
-  cmd = {"tailwindcss-language-server"},
+  cmd = { "tailwindcss-language-server", "--stdio" },
+
   filetypes = {
-    "javascript",
-    "javascriptreact",
-    "svelte",
-    "typescript",
+    "html", "javascript", "javascriptreact",
+    "typescript", "typescriptreact", "svelte", "vue", "astro"
   },
-  root_markers = {".git"},
+
+  root_markers = {
+    "tailwind.config.js",
+    "tailwind.config.ts",
+    ".git"
+  },
+
+  flags = {
+    debounce_text_changes = 150,
+  },
+
+  init_options = {
+    userLanguages = {
+      svelte = "html",
+      vue = "html",
+    },
+  },
 
 }
-

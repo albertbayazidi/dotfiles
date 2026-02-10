@@ -13,6 +13,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     map("<leader>ca", vim.lsp.buf.code_action)
     map("<leader>fq", vim.lsp.buf.format)
     map("<leader>gl", function() vim.diagnostic.open_float({ border = "rounded" }) end)
+    vim.keymap.set("i", "<C-Space>", function() vim.lsp.completion.get() end)
+
   end
 
 })
