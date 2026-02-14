@@ -1,6 +1,6 @@
-export ANDROID_AVD_HOME="$HOME/.android/avd/"
-export ANDROID_HOME="$HOME/git/software/phone/"
+export ANDROID_HOME=/opt/android-sdk
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -19,3 +19,8 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+software_dir="$HOME/git/software"
+docker_lsp="$software_dir/docker-lsp"
+
+export PATH=$PATH:"$docker_lsp"

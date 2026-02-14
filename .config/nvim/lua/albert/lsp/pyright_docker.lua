@@ -23,8 +23,6 @@ local function start_docker_pyright()
     config.cmd = { "docker", "exec", "-i", container, "pyright-langserver", "--stdio" }
 
     vim.lsp.enable("pyright", false)
-
-    -- Enable and start the docker version
     vim.lsp.enable("pyright_docker", true)
     vim.cmd("LspStart pyright_docker")
 
