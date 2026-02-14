@@ -1,8 +1,0 @@
-BMP
-PNM
-PSD
-TGA
-asC
-jpeg
-jpg
-pgm
