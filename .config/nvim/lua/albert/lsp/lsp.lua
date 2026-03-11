@@ -10,7 +10,9 @@ vim.lsp.enable({
   "ruff",
   "svelte",
   "gopls",
-  "bash"
+  "vhdl_ls",
+  "bash",
+  "zls"
 
 })
 

@@ -18,9 +18,11 @@ export GOPATH="$XDG_DATA_HOME"/go
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 
+export BUN_BIN="$XDG_CACHE_HOME"/.bun/bin
+export CARGO_BIN="$XDG_DATA_HOME"/cargo/bin
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 software_dir="$HOME/git/software"
 docker_lsp="$software_dir/docker-lsp"
 
-export PATH=$PATH:"$docker_lsp"
+export PATH=$PATH:"$docker_lsp":"$CARGO_BIN":"$BUN_BIN"
