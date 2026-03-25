@@ -27,4 +27,4 @@ alias koding="tmux a -t koding"
 
 #misc 
 alias phone="./git/software/phone/emulator/emulator -avd google-34 -gpu swiftshader_indirect -writable-system"
-alias record-screen="ffmpeg -video_size 1920x1080 -framerate 60 -f x11grab -i :0.0 output.mp4"
+alias record-screen='ffmpeg -video_size 1920x1080 -framerate 60 -f x11grab -i :0.0 -f pulse -i alsa_output.pci-0000_06_00.6.HIFI__Speaker__sink.monitor -c:v libx264 -preset ultrafast -c:a aac -b:a 192k output.mp4'

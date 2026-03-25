@@ -17,6 +17,7 @@ export GOPATH="$XDG_DATA_HOME"/go
 
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+export GPG_TTY=$(tty)
 
 export BUN_BIN="$XDG_CACHE_HOME"/.bun/bin
 export CARGO_BIN="$XDG_DATA_HOME"/cargo/bin
