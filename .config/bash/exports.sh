@@ -1,7 +1,3 @@
-export ANDROID_HOME=/opt/android-sdk
-export ANDROID_SDK_ROOT="$ANDROID_HOME"
-export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share/"
@@ -17,7 +13,11 @@ export GOPATH="$XDG_DATA_HOME"/go
 
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+
+export GNUPGHOME=$XDG_CONFIG_HOME/gnupg
 export GPG_TTY=$(tty)
+export VISUAL=neovim
+export EDITOR=neovim
 
 export BUN_BIN="$XDG_CACHE_HOME"/.bun/bin
 export CARGO_BIN="$XDG_DATA_HOME"/cargo/bin

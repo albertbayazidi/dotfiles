@@ -28,11 +28,14 @@ vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     if client:supports_method("textDocument/completion") then
-      vim.opt.completeopt = { "menu", "noinsert", "fuzzy", "popup" }
       vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
     end
   end,
 })
+
+vim.opt.completeopt = { "menu", "noinsert", "fuzzy", "popup" }
+vim.o.pumheight = 8
+vim.o.pumborder = "rounded"
 
 -- Diagnostics
 vim.diagnostic.config({

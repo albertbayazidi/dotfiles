@@ -18,6 +18,11 @@ vim.opt.scrolloff = 8
 vim.opt.splitright = true
 vim.opt.updatetime = 100
 
+vim.opt_local.expandtab = true
+vim.opt_local.shiftwidth = 2
+vim.opt_local.tabstop = 2
+vim.opt_local.softtabstop = 2
+
 local indent_group = vim.api.nvim_create_augroup("IndentationSettings", { clear = true })
 
 local function set_indent(width)
